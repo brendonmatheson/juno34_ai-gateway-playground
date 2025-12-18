@@ -1,0 +1,6 @@
+/.obsidian
+terraform.tfstate.backup
+.terraform
+terraform.tfstate
+terraform.auto.tfvars.json
+.terraform.tfstate.lock.info

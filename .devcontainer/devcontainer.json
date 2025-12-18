@@ -1,0 +1,25 @@
+{
+  "name": "AI Gateway Playground",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/terraform:1": {},
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+  "forwardPorts": [8888],
+  "postCreateCommand": "pip install jupyter notebook ipykernel",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-azureterraform",
+        "ms-azuretools.azure-dev",
+        "ms-azuretools.vscode-apimanagement",
+        "teamsdevapp.vscode-ai-foundry",
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
